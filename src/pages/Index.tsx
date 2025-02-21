@@ -254,10 +254,10 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Design of Two Stages Operational Amplifier",
-                  description: "This project focuses on designing a two-stage operational amplifier to meet key parameters like DC gain, phase margin, and frequency response.",
-                  image: "OTA Two stages.png",
-                  link: "https://github.com/SemilogoDan/Analog-Electronics-Design/tree/main",
+                  title: "Design Overview and Analysis of 11/0.415 kV, 500 kVA",
+                  description: "This project involves the design, analysis, and performance evaluation of a 500 kVA, 11/0.415 kV distribution transformer, focusing on efficiency, losses, and voltage regulation.",
+                  image: "distribution-transformer.png",
+                  link: "/DESIGN_OF_500kVA_11_0_415kV_SUBSTATION_O (1).pdf",
                 },
                 {
                   title: "Rural Electrification Design Project",
