@@ -260,10 +260,10 @@ const Index = () => {
                   link: "https://github.com/SemilogoDan/Analog-Electronics-Design/tree/main",
                 },
                 {
-                  title: "Voice Isolation System",
-                  description: "Python program using PyTorch to isolate vocals from audio signals",
-                  image: "CNN.png",
-                  link: "https://github.com/SemilogoDan/Voice_Isolation",
+                  title: "Rural Electrification Design Project",
+                  description: "Comprehensive internship project focusing on rural electrification design and implementation",
+                  image: "rural-electrification.png",
+                  link: "/RURAL_ELECTRIFICATION_DESIGN_INTERSHIP_P (1).pdf",
                 },
                 {
                   title: "Personal VPN over TOR",
