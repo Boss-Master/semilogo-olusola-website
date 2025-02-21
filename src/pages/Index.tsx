@@ -262,7 +262,7 @@ const Index = () => {
                 {
                   title: "Rural Electrification Design Project",
                   description: "Comprehensive internship project focusing on rural electrification design and implementation",
-                  image: "rural-electrification.png",
+                  image: "Rural.png",
                   link: "/RURAL_ELECTRIFICATION_DESIGN_INTERSHIP_P (1).pdf",
                 },
                 {
