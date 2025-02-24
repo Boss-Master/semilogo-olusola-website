@@ -137,44 +137,44 @@ const Index = () => {
           </div>
         </section>
 
-       {/* Education Section */}
-      <section className="education-section py-24 bg-gray-50 dark:bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
-          <div className="space-y-8 max-w-3xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center gap-4 mb-4">
-                <GraduationCap className="text-gray-900" size={24} />
-                <h3 className="text-xl font-semibold">Master of Science in Electrical Engineering</h3>
+             {/* Education Section */}
+            <section className="education-section py-24 bg-gray-50 dark:bg-white">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
+                <div className="space-y-8 max-w-3xl mx-auto">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center gap-4 mb-4">
+                      <GraduationCap className="text-gray-900" size={24} />
+                      <h3 className="text-xl font-semibold">Master of Science in Electrical Engineering</h3>
+                    </div>
+                    <p className="text-gray-600">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
+                    <p className="text-gray-600 mt-2">
+                      Network Security, Communication Networks, Machine Learning & Big Data
+                    </p>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center gap-4 mb-4">
+                      <GraduationCap className="text-gray-900" size={24} />
+                      <h3 className="text-xl font-semibold">Bachelor's in Engineering</h3>
+                    </div>
+                    <p className="text-gray-600">Federal University of Technology Akure (FUTA) • 2011-2016</p>
+                    <p className="text-gray-600 mt-2">
+                      Control Systems, Digital and Wireless Communication, Power System Analysis
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p className="text-gray-600">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
-              <p className="text-gray-600 mt-2">
-                Network Security, Communication Networks, Machine Learning & Big Data
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center gap-4 mb-4">
-                <GraduationCap className="text-gray-900" size={24} />
-                <h3 className="text-xl font-semibold">Bachelor's in Engineering</h3>
-              </div>
-              <p className="text-gray-600">Federal University of Technology Akure (FUTA) • 2011-2016</p>
-              <p className="text-gray-600 mt-2">
-                Control Systems, Digital and Wireless Communication, Power System Analysis
-              </p>
-            </div>
+            </section>
           </div>
-        </div>
-      </section>
-    </div>
-  );
-};
-        
-    {/* Work Experience Section */}
-      <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
-          <div className="space-y-12 max-w-3xl mx-auto">
-            {[{
+        );
+      };
+              
+            {/* Work Experience Section */}
+        <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
+            <div className="space-y-12 max-w-3xl mx-auto">
+              {[{
                 title: "Data Scientist",
                 company: "AGFA-GEVAERT GROUP",
                 location: "Antwerpen, Belgium",
@@ -213,41 +213,37 @@ const Index = () => {
                 achievements: [
                   "Reduced system downtime by 30% through improved automation processes."
                 ]
-              }
-            ].map((job, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
-                <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
-                <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
-                <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
-      
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
-                    <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
-                      {job.responsibilities.map((responsibility, idx) => (
-                        <li key={idx} className="ml-4">{responsibility}</li>
-                      ))}
-                    </ul>
-
-
-                  </div>
-      
-                  {job.achievements.length > 0 && (
+              }].map((job, index) => (
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                  <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
+                  <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
+                  <div className="space-y-4">
                     <div>
-                      <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
+                      <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
                       <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
-                        {job.achievements.map((achievement, idx) => (
-                          <li key={idx} className="ml-4">{achievement}</li>
+                        {job.responsibilities.map((responsibility, idx) => (
+                          <li key={idx} className="ml-4">{responsibility}</li>
                         ))}
                       </ul>
                     </div>
-                  )}
+                    {job.achievements.length > 0 && (
+                      <div>
+                        <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
+                        <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
+                          {job.achievements.map((achievement, idx) => (
+                            <li key={idx} className="ml-4">{achievement}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
 
         
         {/* Projects Section */}
