@@ -137,12 +137,14 @@ const Index = () => {
           </div>
         </section>
 
-    {/* Education Section */}
+{/* Education Section */}
 <section className="education-section py-12 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Centered Section Heading */}
     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Education</h2>
-    <div className="space-y-6 max-w-3xl mx-auto">
 
+    {/* Left-Aligned Cards */}
+    <div className="space-y-6 max-w-3xl mx-auto text-left">
       {/* Master's Card */}
       <div className="bg-gray-50 p-6 rounded-lg shadow-md">
         <div className="flex items-center gap-4 mb-2">
@@ -174,10 +176,10 @@ const Index = () => {
           Control Systems, Digital and Wireless Communication, Power System Analysis
         </p>
       </div>
-
     </div>
   </div>
 </section>
+
 
               
             {/* Work Experience Section */}
