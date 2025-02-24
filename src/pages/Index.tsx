@@ -105,37 +105,44 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Honored to be Featured on Electrical Engineering Portal */}
-        <section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honored to be Featured on Electrical Engineering Portal</h2>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-semibold dark:text-white">11/0.4kV Substation Design </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Comprehensive guide on the design and implementation of 11/0.4kV substations in Nigeria, focusing on power distribution and safety standards.
-                  </p>
-                  <a 
-                    href="https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/11-0-4kv-ss-nigeria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                  >
-                    View Full Project
-                  </a>
-                </div>
-                <div>
-                  <img 
-                    src="EEP.png" 
-                    alt="11/0.4kV Substation"
-                    className="rounded-lg shadow-md w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </div>
+  {/* Honored to be Featured on Electrical Engineering Portal */}
+<section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
+      Honored to be Featured on Electrical Engineering Portal
+    </h2>
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
+        <div className="space-y-4">
+          <h3 className="text-2xl font-semibold dark:text-white">
+            11/0.4kV Substation Design
+          </h3>
+          <p className="text-gray-600 dark:text-gray-300">
+            Comprehensive guide on the design and implementation of 11/0.4kV substations in Nigeria, focusing on power distribution and safety standards.
+          </p>
+          <div className="text-center">
+            <a 
+              href="https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/11-0-4kv-ss-nigeria"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
+            >
+              View Full Project
+            </a>
           </div>
-        </section>
+        </div>
+        <div>
+          <img 
+            src="EEP.png" 
+            alt="11/0.4kV Substation"
+            className="rounded-lg shadow-md w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 {/* Education Section */}
 <section className="education-section py-12 bg-white">
