@@ -147,41 +147,32 @@ const Index = () => {
 
 
 {/* Education Section */}
-<section className="education-section py-12 bg-white">
+<section className="education-section py-24 bg-white dark:bg-gray-800">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* Centered Section Heading */}
-    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Education</h2>
-
-    {/* Left-Aligned Cards */}
-    <div className="space-y-6 max-w-3xl mx-auto text-left">
-      {/* Master's Card */}
-      <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-        <div className="flex items-center gap-4 mb-2">
-          <GraduationCap className="text-gray-900" size={24} />
-          <h3 className="text-xl font-semibold text-gray-900">
+    <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
+    <div className="space-y-8 max-w-3xl mx-auto">
+      <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+        <div className="flex items-center gap-4 mb-4">
+          <GraduationCap className="text-primary dark:text-white" size={24} />
+          <h3 className="text-xl font-semibold dark:text-white">
             Master of Science in Electrical Engineering
           </h3>
         </div>
-        <p className="text-gray-600">
-          Vrije Brussels Universiteit (VUB)/ULB • 2024
-        </p>
-        <p className="text-gray-600 mt-2">
-          Network Security, Communication Networks, Machine Learning &amp; Big Data
+        <p className="text-gray-600 dark:text-gray-400">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
+        <p className="text-gray-600 dark:text-gray-400 mt-2">
+          Network Security, Communication Networks, Machine Learning & Big Data
         </p>
       </div>
-
-      {/* Bachelor's Card */}
-      <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-        <div className="flex items-center gap-4 mb-2">
-          <GraduationCap className="text-gray-900" size={24} />
-          <h3 className="text-xl font-semibold text-gray-900">
+      
+      <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+        <div className="flex items-center gap-4 mb-4">
+          <GraduationCap className="text-primary dark:text-white" size={24} />
+          <h3 className="text-xl font-semibold dark:text-white">
             Bachelor's in Engineering
           </h3>
         </div>
-        <p className="text-gray-600">
-          Federal University of Technology Akure (FUTA) • 2011-2016
-        </p>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 dark:text-gray-400">Federal University of Technology Akure (FUTA) • 2011-2016</p>
+        <p className="text-gray-600 dark:text-gray-400 mt-2">
           Control Systems, Digital and Wireless Communication, Power System Analysis
         </p>
       </div>
