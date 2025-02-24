@@ -165,9 +165,6 @@ const Index = () => {
                 </div>
               </div>
             </section>
-          </div>
-        );
-      };
               
             {/* Work Experience Section */}
         <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
