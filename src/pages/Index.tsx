@@ -376,34 +376,35 @@ const Index = () => {
 
 
 
-        {/* Honors & Awards Section */}
-        <section className="honors-section py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Honors & Awards</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="flex items-center gap-4 mb-4">
-                  <Award className="text-primary" size={24} />
-                  <h3 className="text-xl font-semibold award-title">Agbami Scholarship</h3>
-                </div>
-                <p className="text-gray-600">Agbami Oilfield • 2013-2016</p>
-                <p className="text-gray-600 mt-2">
-                  Scholarship for Engineering and Medical Professions
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <div className="flex items-center gap-4 mb-4">
-                  <Award className="text-primary" size={24} />
-                  <h3 className="text-xl font-semibold award-title">Best Student Award</h3>
-                </div>
-                <p className="text-gray-600">Professor Olufolaji D.B Scholarship Prize • 2014</p>
-                <p className="text-gray-600 mt-2">
-                  Awarded for outstanding academic performance in Year 2
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+       {/* Honors & Awards Section */}
+<section className="honors-section py-24">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center mb-12">Honors & Awards</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="flex items-center gap-4 mb-4">
+          <Award className="text-primary" size={24} />
+          <h3 className="text-xl font-semibold award-title">Agbami Scholarship</h3>
+        </div>
+        <p className="text-gray-600">Agbami Oilfield • 2013-2016</p>
+        <p className="text-gray-600 mt-2">
+          Scholarship for Engineering and Medical Professions
+        </p>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="flex items-center gap-4 mb-4">
+          <Award className="text-primary" size={24} />
+          <h3 className="text-xl font-semibold award-title">Best Student Award</h3>
+        </div>
+        <p className="text-gray-600">Professor Olufolaji D.B Scholarship Prize • 2014</p>
+        <p className="text-gray-600 mt-2">
+          Awarded for outstanding academic performance in Year 2
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Contact Section */}
         <section id="contact" className="contact-section py-24">
