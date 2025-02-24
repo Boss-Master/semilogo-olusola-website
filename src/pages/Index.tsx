@@ -94,7 +94,7 @@ const Index = () => {
                   </ul>
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Interests</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
                   <li>✓ Network Infrastructure & Security</li>
                   <li>✓ AI/ML Model Development</li>
                   <li>✓ Power Systems Design</li>
