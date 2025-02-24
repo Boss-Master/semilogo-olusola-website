@@ -69,8 +69,8 @@ const Index = () => {
                   Possessing hands-on experience with LAN/WAN systems, Software Defined Networking (SDN), and network security.
                 </p>
                 <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-3">Scholarships</h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                  <h3 className="text-xl font-semibold mb-3 text-left">Scholarships</h3>
+                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
                     <li>
                       <a 
                         href="https://imgur.com/35T7Fqa" 
@@ -93,7 +93,7 @@ const Index = () => {
                     </li>
                   </ul>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Interests</h3>
+                <h3 className="text-xl font-semibold mb-3 text-left">Interests</h3>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
                   <li>✓ Network Infrastructure & Security</li>
                   <li>✓ AI/ML Model Development</li>
