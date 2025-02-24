@@ -63,7 +63,7 @@ const Index = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl font-bold mb-6 ">About Me</h2>
+                <h2 className="text-3xl font-bold mb-6 text-left ">About Me</h2>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
                   Recent graduate with a Master's degree in Electrical Engineering, specializing in Information Communication Technology (ICT).
                   Possessing hands-on experience with LAN/WAN systems, Software Defined Networking (SDN), and network security.
