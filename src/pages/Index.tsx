@@ -425,7 +425,7 @@ const Index = () => {
               </p>
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-left">
                     Name
                   </label>
                   <input
@@ -438,7 +438,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-left">
                     Email
                   </label>
                   <input
@@ -451,7 +451,7 @@ const Index = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-left">
                     Message
                   </label>
                   <textarea
