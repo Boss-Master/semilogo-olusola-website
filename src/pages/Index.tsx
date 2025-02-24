@@ -306,10 +306,10 @@ const Index = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {[
         {
-          title: "AWS Certified AI Practitioner",
+          title: "Solar Energy and Electrical System Design",
           issuer: "AWS",
           date: "Dec 2024",
-          file: "AWS Certified AI Practitioner.pdf"
+          link: "https://www.coursera.org/accomplishments"
         },
         {
           title: "IT Automation with Python",
