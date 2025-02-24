@@ -300,60 +300,61 @@ const Index = () => {
           </div>
         </section>
 
-      <section className="certification-section py-24 bg-white dark:bg-gray-900">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-      {[
-        {
-          title: "Solar Energy and Electrical System Design",
-          issuer: "AWS",
-          date: "Dec 2024",
-          link: "https://www.coursera.org/accomplishments"
-        },
-        {
-          title: "IT Automation with Python",
-          issuer: "Google",
-          date: "Nov 2024",
-          file: "Google IT Automation with Python GHBWUS1F45HS Coursera.pdf"
-        },
-        {
-          title: "Network Automation Professional",
-          issuer: "Arista Networks",
-          date: "Dec 2024",
-          file: "Network Automation Professional Certificate by Arista Networks Certificate Of Completion_.pdf"
-        },
-        {
-          title: "Power BI Data Analyst",
-          issuer: "Microsoft AI",
-          date: "Nov 2024",
-          file: "Power BI Coursera EASHVEE1JIRG.pdf"
-        }
-      ].map((cert, index) => (
-        <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-          <div className="flex items-center gap-4 mb-4">
-            <Medal className="text-primary" size={24} />
-            <h3 className="text-xl font-semibold">
-              <a 
-                href={`/${cert.file}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
-              >
-                {cert.title}
-              </a>
-            </h3>
+          <section className="certification-section py-24 bg-white dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {[
+                {
+                  title: "Solar Energy and Electrical System Design",
+                  issuer: "AWS",
+                  date: "Dec 2024",
+                  link: "https://www.coursera.org/accomplishments"
+                },
+                {
+                  title: "IT Automation with Python",
+                  issuer: "Google",
+                  date: "Nov 2024",
+                  file: "Google IT Automation with Python GHBWUS1F45HS Coursera.pdf"
+                },
+                {
+                  title: "Network Automation Professional",
+                  issuer: "Arista Networks",
+                  date: "Dec 2024",
+                  file: "Network Automation Professional Certificate by Arista Networks Certificate Of Completion_.pdf"
+                },
+                {
+                  title: "Power BI Data Analyst",
+                  issuer: "Microsoft AI",
+                  date: "Nov 2024",
+                  file: "Power BI Coursera EASHVEE1JIRG.pdf"
+                }
+              ].map((cert, index) => (
+                <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                  <div className="flex items-center gap-4 mb-4">
+                    <Medal className="text-primary" size={24} />
+                    <h3 className="text-xl font-semibold">
+                      <a 
+                        href={cert.link ? cert.link : `/${cert.file}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        {cert.title}
+                      </a>
+                    </h3>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                    <span className="text-white text-sm">View Certificate</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
-          {/* Hover overlay */}
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-            <span className="text-white text-sm">View Certificate</span>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+        </section>
+
 
 
         {/* Honors & Awards Section */}
