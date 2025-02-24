@@ -55,7 +55,7 @@ export const Footer = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 text-black">Connect</h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-gray-600 text-left">
               Feel free to reach out through any of my social media channels or send me an email directly.
             </p>
           </div>
