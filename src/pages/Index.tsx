@@ -404,7 +404,7 @@ const Index = () => {
           </p>
           {/* Hover overlay */}
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-            <span className="text-white text-sm">View Certificate</span>
+            <span className="text-white text-sm">View Scholarship Declaration</span>
           </div>
         </div>
       </a>
@@ -428,7 +428,7 @@ const Index = () => {
           </p>
           {/* Hover overlay */}
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-            <span className="text-white text-sm">View Certificate</span>
+            <span className="text-white text-sm">View Scholarship Declaration</span>
           </div>
         </div>
       </a>
