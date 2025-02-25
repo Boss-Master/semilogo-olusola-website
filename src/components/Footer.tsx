@@ -1,4 +1,4 @@
-treimport { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Footer = () => {
