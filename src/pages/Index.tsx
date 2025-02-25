@@ -69,8 +69,7 @@ const Index = () => {
                 eager to launch my career in a graduate program focused on power systems,
                   electricity generation, transmission, and distribution, as well as renewable energy.
                   I am enthusiastic about opportunities where I can learn, grow, and contribute to the company’s success. 
-                  My academic and hands-on experience, including work with LAN/WAN systems, Software Defined Networking (SDN), and network security,
-                  has prepared me to make a meaningful impact in the energy sector.
+                  My academic and field experience, has given  me a solid foundation to make a meaningful impact in the energy sector.
                 </p>
                 <div className="mb-6">
                   <h3 className="text-xl font-semibold mb-3 text-left">Scholarships</h3>
