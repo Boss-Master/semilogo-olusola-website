@@ -13,15 +13,6 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow pt-16">
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Github, Linkedin, Mail, GraduationCap, Award, Medal } from "lucide-react";
-
-const Index = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow pt-16">
         {/* Hero Section */}
             <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
