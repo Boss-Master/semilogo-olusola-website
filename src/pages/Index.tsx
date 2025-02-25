@@ -410,58 +410,60 @@ const Index = () => {
 
 
 
-   {/* Honors & Awards Section */}
-<section className="honors-section py-24">
+  {/* Honors & Awards Section */}
+<section className="honors-section py-24 bg-white dark:bg-gray-900">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold text-center mb-12">Honors & Awards</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
-      <a 
-        href="https://i.imgur.com/35T7Fqa.jpeg"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group relative"
-      >
-        <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
-          <div className="flex items-center gap-4 mb-4">
-            <Award className="text-primary" size={24} />
-            <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors">
-              Agbami Scholarship
-            </h3>
+    <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honors & Awards</h2>
+    <div className="bg-gray-50 dark:bg-gray-700 p-8 rounded-xl shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+        <a 
+          href="https://i.imgur.com/35T7Fqa.jpeg"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative"
+        >
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+            <div className="flex items-center gap-4 mb-4">
+              <Award className="text-primary" size={24} />
+              <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
+                Agbami Scholarship
+              </h3>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400">Agbami Oilfield • 2013-2016</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">
+              Scholarship for Engineering and Medical Professions
+            </p>
+            {/* Hover overlay */}
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+              <span className="text-white text-sm">View Scholarship Declaration</span>
+            </div>
           </div>
-          <p className="text-gray-600">Agbami Oilfield • 2013-2016</p>
-          <p className="text-gray-600 mt-2">
-            Scholarship for Engineering and Medical Professions
-          </p>
-          {/* Hover overlay */}
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-            <span className="text-white text-sm">View Scholarship Declaration</span>
-          </div>
-        </div>
-      </a>
+        </a>
 
-      <a 
-        href="https://i.imgur.com/LCkQX43.png"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group relative"
-      >
-        <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
-          <div className="flex items-center gap-4 mb-4">
-            <Award className="text-primary" size={24} />
-            <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors">
-              Best Student Award
-            </h3>
+        <a 
+          href="https://i.imgur.com/LCkQX43.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative"
+        >
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+            <div className="flex items-center gap-4 mb-4">
+              <Award className="text-primary" size={24} />
+              <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
+                Best Student Award
+              </h3>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400">Professor Olufolaji D.B Scholarship Prize • 2014</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">
+              Awarded for outstanding academic performance in Year 2
+            </p>
+            {/* Hover overlay */}
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+              <span className="text-white text-sm">View Scholarship Declaration</span>
+            </div>
           </div>
-          <p className="text-gray-600">Professor Olufolaji D.B Scholarship Prize • 2014</p>
-          <p className="text-gray-600 mt-2">
-            Awarded for outstanding academic performance in Year 2
-          </p>
-          {/* Hover overlay */}
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-            <span className="text-white text-sm">View Scholarship Declaration</span>
-          </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </section>
