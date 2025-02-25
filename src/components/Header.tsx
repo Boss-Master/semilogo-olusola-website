@@ -11,6 +11,14 @@ import {
 export const Header = () => {
   const { setTheme } = useTheme();
 
+  // Function to scroll to the Hero section
+  const scrollToHero = () => {
+    const heroSection = document.querySelector("#home");
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   // Function to scroll to the About section
   const scrollToAbout = () => {
     const aboutSection = document.querySelector("#about");
@@ -24,30 +32,28 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
-            {/* When clicking Semilogo, scroll to the About section */}
+            {/* Clicking Semilogo scrolls to the About section */}
             <button onClick={scrollToAbout} className="text-xl font-semibold">
               Semilogo
             </button>
             <nav className="flex space-x-8">
-              <button
-                onClick={scrollToAbout}
+              {/* Clicking Home scrolls to the Hero section */}
+              <button 
+                onClick={scrollToHero} 
                 className="text-sm font-medium hover:text-primary cursor-pointer"
               >
                 Home
               </button>
-              <a href="#about" className="text-sm font-medium hover:text-primary">
-                About
-              </a>
               <a href="#projects" className="text-sm font-medium hover:text-primary">
                 Projects
               </a>
               <a href="#contact" className="text-sm font-medium hover:text-primary">
                 Contact
               </a>
-              <a
+              <a 
                 href={encodeURI("/Semilogo OGUNGBURE_Electrical.pdf")}
-                target="_blank"
-                rel="noopener noreferrer"
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="text-sm font-medium hover:text-primary"
               >
                 CV
