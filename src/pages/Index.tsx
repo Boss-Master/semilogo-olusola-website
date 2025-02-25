@@ -109,12 +109,12 @@ const Index = () => {
         </section>
 
         {/* Featured Project Section */}
-        <section className="featured-project py-24 bg-white dark:bg-gray-900">
+        <section className="featured-project py-24 bg-white dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
               Honored to be Featured on Electrical Engineering Portal
             </h2>
-            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-gl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
                 <div className="space-y-4">
                   <div className="w-full text-center">
@@ -130,7 +130,7 @@ const Index = () => {
                       href="https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/11-0-4kv-ss-nigeria"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                      className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
                     >
                       View Full Project
                     </a>
@@ -149,7 +149,7 @@ const Index = () => {
         </section>
 
         {/* Education Section */}
-        <section className="education-section py-24 bg-white dark:bg-gray-900">
+        <section className="education-section py-24 bg-white dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-3xl mx-auto">
@@ -183,7 +183,7 @@ const Index = () => {
         </section>
 
         {/* Work Experience Section */}
-        <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
+        <section className="work-experience-section py-24 bg-white dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
             <div className="space-y-12 max-w-3xl mx-auto">
@@ -225,7 +225,7 @@ const Index = () => {
                   achievements: ["Reduced system downtime by 30% through improved automation processes."]
                 }
               ].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
                   <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
@@ -338,7 +338,7 @@ const Index = () => {
                   file: "Power BI Coursera EASHVEE1JIRG.pdf"
                 }
               ].map((cert, index) => (
-                <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-gl">
+                <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-gl">
                   <div className="flex items-center gap-4 mb-4">
                     <Medal className="text-primary" size={24} />
                     <h3 className="text-xl font-semibold">
@@ -364,10 +364,10 @@ const Index = () => {
         </section>
 
         {/* Honors & Awards Section */}
-        <section className="honors-section py-24 bg-white dark:bg-gray-900">
+        <section className="honors-section py-24 bg-white dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honors & Awards</h2>
-            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
                 <a 
                   href="https://i.imgur.com/35T7Fqa.jpeg"
@@ -399,7 +399,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="group relative"
                 >
-                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
                     <div className="flex items-center gap-4 mb-4">
                       <Award className="text-primary" size={24} />
                       <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
@@ -422,10 +422,10 @@ const Index = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
+        <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
-            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="max-w-3xl mx-auto">
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
                   I'm always open to discussing new projects and opportunities.
