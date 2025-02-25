@@ -65,8 +65,12 @@ const Index = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-left ">About Me</h2>
                 <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
-                  Recent graduate with a Master's degree in Electrical Engineering, specializing in Information Communication Technology (ICT).
-                  Possessing hands-on experience with LAN/WAN systems, Software Defined Networking (SDN), and network security.
+                Recent graduate with a Master’s degree in Electrical Engineering,
+                eager to launch my career in a graduate program focused on power systems,
+                  electricity generation, transmission, and distribution, as well as renewable energy.
+                  I am enthusiastic about opportunities where I can learn, grow, and contribute to the company’s success. 
+                  My academic and hands-on experience, including work with LAN/WAN systems, Software Defined Networking (SDN), and network security,
+                  has prepared me to make a meaningful impact in the energy sector.
                 </p>
                 <div className="mb-6">
                   <h3 className="text-xl font-semibold mb-3 text-left">Scholarships</h3>
