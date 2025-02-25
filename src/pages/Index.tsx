@@ -8,7 +8,7 @@ const Index = () => {
       <Header />
       <main className="flex-grow pt-16">
         {/* Hero Section */}
-        <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
+        <section id="home" className="bg-white dark:bg-gray-900 py-24 sm:py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-xl shadow-lg backdrop-blur-sm">
               <div className="text-center">
