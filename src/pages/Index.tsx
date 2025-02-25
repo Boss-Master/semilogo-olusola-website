@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+      import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Github, Linkedin, Mail, GraduationCap, Award, Medal } from "lucide-react";
 
@@ -10,7 +10,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white/50 dark:bg-gray-800/50 p-8 rounded-xl shadow-lg backdrop-blur-sm">
+            <div className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-xl shadow-lg backdrop-blur-sm">
               <div className="text-center">
                 <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                   Electrical Engineering
@@ -20,7 +20,7 @@ const Index = () => {
                 </p>
                 <a
                   href="#projects"
-                  className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-8 py-3 rounded-xl hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
+                  className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-8 py-3 rounded-xl hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
                 >
                   View Projects
                 </a>
@@ -32,7 +32,7 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                   <img
@@ -114,7 +114,7 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
               Honored to be Featured on Electrical Engineering Portal
             </h2>
-            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
                 <div className="space-y-4">
                   <div className="w-full text-center">
@@ -130,7 +130,7 @@ const Index = () => {
                       href="https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/11-0-4kv-ss-nigeria"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                      className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
                     >
                       View Full Project
                     </a>
@@ -148,12 +148,12 @@ const Index = () => {
           </div>
         </section>
 
-          {/* Education Section */}
-        <section className="education-section py-24 bg-white dark:bg-gray-800">
+        {/* Education Section */}
+        <section className="education-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Education</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-3xl mx-auto">
-              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-gl">
+              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
@@ -166,7 +166,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-gl">
+              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
@@ -181,9 +181,9 @@ const Index = () => {
             </div>
           </div>
         </section>
-
+         
         {/* Work Experience Section */}
-        <section className="work-experience-section py-24 bg-white dark:bg-gray-800">
+        <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
             <div className="space-y-12 max-w-3xl mx-auto">
@@ -225,7 +225,7 @@ const Index = () => {
                   achievements: ["Reduced system downtime by 30% through improved automation processes."]
                 }
               ].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
                   <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
@@ -254,7 +254,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-          
+            
         {/* Projects Section */}
         <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -307,56 +307,63 @@ const Index = () => {
             </div>
           </div>
         </section>
-             {/* Certification Section */}
-          <section className="certification-section py-24 bg-white dark:bg-gray-800">
+        
+        {/* Certification Section */}
+        <section className="certification-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Certifications</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
               {[
                 {
                   title: "Solar Energy and Electrical System Design",
-                  issuer: "AWS",
+                  issuer: "Coursera",
                   date: "Dec 2024",
                   link: "https://www.coursera.org/accomplishments"
                 },
                 {
-                  title: "IT Automation with Python",
-                  issuer: "Google",
+                  title: "Wind Energy",
+                  issuer: "Coursera",
                   date: "Nov 2024",
-                  file: "Google IT Automation with Python GHBWUS1F45HS Coursera.pdf"
+                  link: "https://bit.ly/41k0GpN"
                 },
                 {
-                  title: "Network Automation Professional",
-                  issuer: "Arista Networks",
+                  title: "Energy Transition: Innovation Towards a Low-Carbon Future",
+                  issuer: "Coursera",
                   date: "Dec 2024",
-                  file: "Network Automation Professional Certificate by Arista Networks Certificate Of Completion_.pdf"
+                  link: "https://i.imgur.com/lzwUwtH.png"
                 },
                 {
-                  title: "Power BI Data Analyst",
-                  issuer: "Microsoft AI",
+                  title: "Microsoft Power BI Data Analyst Specialization",
+                  issuer: "Microsoft",
                   date: "Nov 2024",
-                  file: "Power BI Coursera EASHVEE1JIRG.pdf"
+                  link: "https://www.coursera.org/account/accomplishments/professional-cert/EASHVEE1JIRG"
+                },
+                {
+                  title: "Google Project Management",
+                  issuer: "Google",
+                  date: "Dec 2024",
+                  link: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NOTSLU24KEHA/CERTIFICATE_LANDING_PAGE~NOTSLU24KEHA.jpeg"
                 }
               ].map((cert, index) => (
-                <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-gl">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Medal className="text-primary" size={24} />
-                    <h3 className="text-xl font-semibold">
-                      <a 
-                        href={cert.link ? cert.link : `/${cert.file}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-primary transition-colors"
-                      >
+                <div key={index} className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md cursor-pointer">
+                  <a 
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full"
+                  >
+                    <div className="flex items-center gap-4 mb-4">
+                      <Medal className="text-primary" size={24} />
+                      <h3 className="text-xl font-semibold hover:text-primary transition-colors">
                         {cert.title}
-                      </a>
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
-                  {/* Hover overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-                    <span className="text-white text-sm">View Certificate</span>
-                  </div>
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
+                      <span className="text-white text-sm">View Certificate</span>
+                    </div>
+                  </a>
                 </div>
               ))}
             </div>
@@ -364,10 +371,10 @@ const Index = () => {
         </section>
 
         {/* Honors & Awards Section */}
-        <section className="honors-section py-24 bg-white dark:bg-gray-800">
+        <section className="honors-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honors & Awards</h2>
-            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
                 <a 
                   href="https://i.imgur.com/35T7Fqa.jpeg"
@@ -399,7 +406,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="group relative"
                 >
-                  <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+                  <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105">
                     <div className="flex items-center gap-4 mb-4">
                       <Award className="text-primary" size={24} />
                       <h3 className="text-xl font-semibold award-title group-hover:text-primary transition-colors dark:text-white">
@@ -422,10 +429,10 @@ const Index = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-800">
+        <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
-            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+            <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg">
               <div className="max-w-3xl mx-auto">
                 <p className="text-gray-600 dark:text-gray-300 mb-8">
                   I'm always open to discussing new projects and opportunities.
@@ -491,4 +498,6 @@ export default Index;
 
 
 
+
       
+       
