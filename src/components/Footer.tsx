@@ -1,15 +1,23 @@
-
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
+import React from "react";
 
 export const Footer = () => {
-  // Add function to scroll to hero section
+  // Function to scroll to the About section
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector("#about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // Existing function to scroll to hero (optional if still needed)
   const scrollToHero = () => {
-    const heroSection = document.querySelector('.hero-section');
+    const heroSection = document.querySelector(".hero-section");
     if (heroSection) {
-      heroSection.scrollIntoView({ behavior: 'smooth' });
+      heroSection.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
 
@@ -18,7 +26,13 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-black dark:text-white text-left">Semilogo</h3>
+            {/* Clickable heading that scrolls to About */}
+            <h3
+              onClick={scrollToAbout}
+              className="text-lg font-semibold mb-4 text-black dark:text-white text-left cursor-pointer"
+            >
+              Semilogo
+            </h3>
             <div className="flex space-x-4">
               <a
                 href="https://github.com/SemilogoDan"
@@ -48,8 +62,8 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-black dark:text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                {/* Changed Link to button with onClick to scroll to hero section */}
-                <button 
+                {/* Button that scrolls to hero (optional if you still need it) */}
+                <button
                   onClick={scrollToHero}
                   className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary cursor-pointer"
                 >
@@ -57,12 +71,18 @@ export const Footer = () => {
                 </button>
               </li>
               <li>
-                <a href="#about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary">
+                <a
+                  href="#about"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary">
+                <a
+                  href="#projects"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary"
+                >
                   Projects
                 </a>
               </li>
