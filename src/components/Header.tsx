@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
@@ -18,13 +17,14 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
-            <Link to="/" className="text-xl font-semibold">
+            {/* Changed Home link to use an anchor for on-page scrolling */}
+            <a href="#home" className="text-xl font-semibold">
               Semilogo
-            </Link>
+            </a>
             <nav className="flex space-x-8">
-              <Link to="/" className="text-sm font-medium hover:text-primary">
+              <a href="#home" className="text-sm font-medium hover:text-primary">
                 Home
-              </Link>
+              </a>
               <a href="#about" className="text-sm font-medium hover:text-primary">
                 About
               </a>
