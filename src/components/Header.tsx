@@ -32,12 +32,12 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
-            {/* Clicking Semilogo scrolls to the About section */}
+            {/* Clicking Semilogo scrolls to About section */}
             <button onClick={scrollToAbout} className="text-xl font-semibold">
               Semilogo
             </button>
             <nav className="flex space-x-8">
-              {/* Clicking Home scrolls to the Hero section */}
+              {/* Clicking Home scrolls to Hero section */}
               <button 
                 onClick={scrollToHero} 
                 className="text-sm font-medium hover:text-primary cursor-pointer"
