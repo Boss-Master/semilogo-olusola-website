@@ -1,7 +1,18 @@
+
 import { Link } from "react-router-dom";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Footer = () => {
+  // Add function to scroll to hero section
+  const scrollToHero = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-white dark:bg-gray-800 border-t dark:border-gray-700 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -37,9 +48,13 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-black dark:text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary">
+                {/* Changed Link to button with onClick to scroll to hero section */}
+                <button 
+                  onClick={scrollToHero}
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary cursor-pointer"
+                >
                   Home
-                </Link>
+                </button>
               </li>
               <li>
                 <a href="#about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary">
