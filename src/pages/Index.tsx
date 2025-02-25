@@ -160,7 +160,7 @@ const Index = () => {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Education</h2>
     <div className="space-y-8 max-w-3xl mx-auto">
-      <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-lx shadow-md">
         <div className="flex items-center gap-4 mb-4">
           <GraduationCap className="text-primary dark:text-white" size={24} />
           <h3 className="text-xl font-semibold dark:text-white">
@@ -236,7 +236,7 @@ const Index = () => {
                   "Reduced system downtime by 30% through improved automation processes."
                 ]
               }].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
                   <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
