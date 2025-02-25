@@ -236,7 +236,7 @@ const Index = () => {
                   "Reduced system downtime by 30% through improved automation processes."
                 ]
               }].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md">
                   <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
                   <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
@@ -293,7 +293,7 @@ const Index = () => {
                   link: "https://medium.com/@SemilogoDan/tor-personal-vpn-exploring-home-based-and-cloud-based-solutions-for-personal-vpn-over-tor-57e6ae0c100d",
                 },
               ].map((project, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative">
+                <div key={index} className="bg-white dark:bg-gray-800 rounded-lx overflow-hidden shadow-lg group relative">
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <img
                       src={project.image}
@@ -358,7 +358,7 @@ const Index = () => {
           link: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NOTSLU24KEHA/CERTIFICATE_LANDING_PAGE~NOTSLU24KEHA.jpeg"
         }
       ].map((cert, index) => (
-        <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md cursor-pointer">
+        <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lx shadow-md cursor-pointer">
           <a 
             href={cert.link}
             target="_blank"
