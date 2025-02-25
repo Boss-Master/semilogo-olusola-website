@@ -307,8 +307,8 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-          <section className="certification-section py-24 bg-white dark:bg-gray-900">
+             {/* Certification Section */}
+          <section className="certification-section py-24 bg-white dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12">Certifications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -338,7 +338,7 @@ const Index = () => {
                   file: "Power BI Coursera EASHVEE1JIRG.pdf"
                 }
               ].map((cert, index) => (
-                <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                <div key={index} className="relative group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-gl">
                   <div className="flex items-center gap-4 mb-4">
                     <Medal className="text-primary" size={24} />
                     <h3 className="text-xl font-semibold">
@@ -357,71 +357,6 @@ const Index = () => {
                   <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
                     <span className="text-white text-sm">View Certificate</span>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-
-        
-   
-        {/* Certification Section */}
-        <section className="certification-section py-24 bg-white dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Certifications</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
-              {[
-                {
-                  title: "Solar Energy and Electrical System Design",
-                  issuer: "Coursera",
-                  date: "Dec 2024",
-                  link: "https://www.coursera.org/accomplishments"
-                },
-                {
-                  title: "Wind Energy",
-                  issuer: "Coursera",
-                  date: "Nov 2024",
-                  link: "https://bit.ly/41k0GpN"
-                },
-                {
-                  title: "Energy Transition: Innovation Towards a Low-Carbon Future",
-                  issuer: "Coursera",
-                  date: "Dec 2024",
-                  link: "https://i.imgur.com/lzwUwtH.png"
-                },
-                {
-                  title: "Microsoft Power BI Data Analyst Specialization",
-                  issuer: "Microsoft",
-                  date: "Nov 2024",
-                  link: "https://www.coursera.org/account/accomplishments/professional-cert/EASHVEE1JIRG"
-                },
-                {
-                  title: "Google Project Management",
-                  issuer: "Google",
-                  date: "Dec 2024",
-                  link: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NOTSLU24KEHA/CERTIFICATE_LANDING_PAGE~NOTSLU24KEHA.jpeg"
-                }
-              ].map((cert, index) => (
-                <div key={index} className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md cursor-pointer">
-                  <a 
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block h-full"
-                  >
-                    <div className="flex items-center gap-4 mb-4">
-                      <Medal className="text-primary" size={24} />
-                      <h3 className="text-xl font-semibold hover:text-primary transition-colors">
-                        {cert.title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400">{cert.issuer} • {cert.date}</p>
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity rounded-xl">
-                      <span className="text-white text-sm">View Certificate</span>
-                    </div>
-                  </a>
                 </div>
               ))}
             </div>
