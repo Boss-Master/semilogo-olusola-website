@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4 text-black text-left ">Semilogo</h3>
-            <div className="flex space-x-4 textce text-centre">
+            <div className="flex space-x-4">
               <a
                 href="https://github.com/SemilogoDan"
                 target="_blank"
