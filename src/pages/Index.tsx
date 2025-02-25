@@ -28,85 +28,88 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <section id="about" className="about-section py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img
-                  src="/Profile_pic.jpg"
-                  alt="Semilogo Olusola OGUNGBURE"
-                  className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
-                />
-                <div className="flex justify-center mt-6 space-x-4 social-icons">
-                  <a
-                    href="https://github.com/SemilogoDan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <Github size={24} />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/?profileId=ACoAADRttzAB7C_f7mYzKmDqTvcsydKnpoxLhHo"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <Linkedin size={24} />
-                  </a>
-                  <a
-                    href="mailto:semilogoolusola@gmail.com"
-                    className="text-gray-600 hover:text-primary transition-colors"
-                  >
-                    <Mail size={24} />
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-6 text-left ">About Me</h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
-                Recent graduate with a Master’s degree in Electrical Engineering,
-                eager to launch my career in a graduate program focused on power systems,
-                  electricity generation, transmission, and distribution, as well as renewable energy.
-                  I am enthusiastic about opportunities where I can learn, grow, and contribute to the company’s success. 
-                  My academic and field experience, has given  me a solid foundation to make a meaningful impact in the energy sector.
-                </p>
-                <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-3 text-left">Scholarships</h3>
-                  <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
-                    <li>
-                      <a 
-                        href="https://imgur.com/35T7Fqa" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary"
-                      >
-                        ✓ Agbami Scholarship (2013-2016)
-                      </a>
-                    </li>
-                    <li>
-                      <a 
-                        href="https://www.facebook.com/profile/100001585760055/search/?q=OLUFOLAJI%2FCAC%20GLORY%20SCHORLARSHIP%20AWARD" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hover:text-primary"
-                      >
-                        ✓ Professor Olufolaji D.B Scholarship Prize (2014)
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-left">Interests</h3>
-                <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
-                  <li>✓ Network Infrastructure & Security</li>
-                  <li>✓ AI/ML Model Development</li>
-                  <li>✓ Power Systems Design</li>
-                  <li>✓ Cloud Technologies</li>
-                </ul>
-              </div>
-            </div>
+<section id="about" className="about-section py-24">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-50 dark:bg-gray-700 p-8 rounded-xl shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img
+            src="/Profile_pic.jpg"
+            alt="Semilogo Olusola OGUNGBURE"
+            className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
+          />
+          <div className="flex justify-center mt-6 space-x-4 social-icons">
+            <a
+              href="https://github.com/SemilogoDan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              <Github size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/?profileId=ACoAADRttzAB7C_f7mYzKmDqTvcsydKnpoxLhHo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              <Linkedin size={24} />
+            </a>
+            <a
+              href="mailto:semilogoolusola@gmail.com"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+            >
+              <Mail size={24} />
+            </a>
           </div>
-        </section>
+        </div>
+        <div>
+          <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">About Me</h2>
+          <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
+            Recent graduate with a Master's degree in Electrical Engineering,
+            eager to launch my career in a graduate program focused on power systems,
+            electricity generation, transmission, and distribution, as well as renewable energy.
+            I am enthusiastic about opportunities where I can learn, grow, and contribute to the company's success. 
+            My academic and field experience, has given me a solid foundation to make a meaningful impact in the energy sector.
+          </p>
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Scholarships</h3>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
+              <li>
+                <a 
+                  href="https://imgur.com/35T7Fqa" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary dark:hover:text-primary"
+                >
+                  ✓ Agbami Scholarship (2013-2016)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.facebook.com/profile/100001585760055/search/?q=OLUFOLAJI%2FCAC%20GLORY%20SCHORLARSHIP%20AWARD" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary dark:hover:text-primary"
+                >
+                  ✓ Professor Olufolaji D.B Scholarship Prize (2014)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Interests</h3>
+          <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
+            <li>✓ Network Infrastructure & Security</li>
+            <li>✓ AI/ML Model Development</li>
+            <li>✓ Power Systems Design</li>
+            <li>✓ Cloud Technologies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   {/* Honored to be Featured on Electrical Engineering Portal */}
 <section className="featured-project py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
