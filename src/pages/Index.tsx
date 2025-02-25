@@ -161,8 +161,8 @@ const Index = () => {
             Master of Science in Electrical Engineering
           </h3>
         </div>
-        <p className="text-gray-600 dark:text-gray-400">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
-        <p className="text-gray-600 dark:text-gray-400 mt-2">
+        <p className="text-gray-600 dark:text-gray-400 text-left">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
+        <p className="text-gray-600 dark:text-gray-400 mt-2 text-left">
           Network Security, Communication Networks, Machine Learning & Big Data
         </p>
       </div>
@@ -174,8 +174,8 @@ const Index = () => {
             Bachelor's in Engineering
           </h3>
         </div>
-        <p className="text-gray-600 dark:text-gray-400">Federal University of Technology Akure (FUTA) • 2011-2016</p>
-        <p className="text-gray-600 dark:text-gray-400 mt-2">
+        <p className="text-gray-600 dark:text-gray-400 text-left">Federal University of Technology Akure (FUTA) • 2011-2016</p>
+        <p className="text-gray-600 dark:text-gray-400 mt-2 text-left">
           Control Systems, Digital and Wireless Communication, Power System Analysis
         </p>
       </div>
