@@ -1,5 +1,3 @@
-
-import { Link } from "react-router-dom";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,13 +11,11 @@ import {
 export const Header = () => {
   const { setTheme } = useTheme();
 
-  // Add function to scroll to hero section
-  const scrollToHero = () => {
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-      heroSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Function to scroll to the About section
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector("#about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -28,13 +24,13 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
-            <Link to="/" className="text-xl font-semibold">
+            {/* When clicking Semilogo, scroll to the About section */}
+            <button onClick={scrollToAbout} className="text-xl font-semibold">
               Semilogo
-            </Link>
+            </button>
             <nav className="flex space-x-8">
-              {/* Changed Link to button with onClick to scroll to hero section */}
-              <button 
-                onClick={scrollToHero} 
+              <button
+                onClick={scrollToAbout}
                 className="text-sm font-medium hover:text-primary cursor-pointer"
               >
                 Home
@@ -48,10 +44,10 @@ export const Header = () => {
               <a href="#contact" className="text-sm font-medium hover:text-primary">
                 Contact
               </a>
-              <a 
+              <a
                 href={encodeURI("/Semilogo OGUNGBURE_Electrical.pdf")}
-                target="_blank" 
-                rel="noopener noreferrer" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm font-medium hover:text-primary"
               >
                 CV
