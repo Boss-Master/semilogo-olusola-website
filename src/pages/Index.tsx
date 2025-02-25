@@ -109,12 +109,12 @@ const Index = () => {
         </section>
 
         {/* Featured Project Section */}
-        <section className="featured-project py-24 bg-white dark:bg-gray-800">
+        <section className="featured-project py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
               Honored to be Featured on Electrical Engineering Portal
             </h2>
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-gl overflow-hidden">
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
                 <div className="space-y-4">
                   <div className="w-full text-center">
