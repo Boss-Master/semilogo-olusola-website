@@ -10,7 +10,7 @@ const Index = () => {
         {/* Hero Section */}
         <section className="bg-white dark:bg-gray-900 py-24 sm:py-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-xl shadow-lg backdrop-blur-sm">
+            <div className="bg-white/50 dark:bg-gray-800/50 p-8 rounded-xl shadow-lg backdrop-blur-sm">
               <div className="text-center">
                 <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                   Electrical Engineering
@@ -20,7 +20,7 @@ const Index = () => {
                 </p>
                 <a
                   href="#projects"
-                  className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-8 py-3 rounded-xl hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
+                  className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-8 py-3 rounded-xl hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
                 >
                   View Projects
                 </a>
@@ -32,7 +32,7 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                   <img
