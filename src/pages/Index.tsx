@@ -1,5 +1,3 @@
-
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Github, Linkedin, Mail, GraduationCap, Award, Medal } from "lucide-react";
