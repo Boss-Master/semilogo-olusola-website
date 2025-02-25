@@ -151,9 +151,9 @@ const Index = () => {
         {/* Education Section */}
         <section className="education-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Education</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-3xl mx-auto">
-              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
+              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-gl">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
@@ -166,7 +166,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md">
+              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-gl">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
