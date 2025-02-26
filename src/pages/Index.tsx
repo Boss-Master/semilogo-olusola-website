@@ -182,78 +182,79 @@ const Index = () => {
           </div>
         </section>
          
-        {/* Work Experience Section */}
-        <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
-            <div className="space-y-12 max-w-7xl mx-auto">
-              {[
-                {
-                  title: "Data Scientist",
-                  company: "AGFA-GEVAERT GROUP",
-                  location: "Antwerpen, Belgium",
-                  period: "08/2023 – 09/2024",
-                  responsibilities: [
-                    "Developed and deployed AI/ML models for product quality analysis using sensor data and electrical engineering principles.",
-                    "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
-                    "Supported network monitoring and incident management to maintain network performance."
-                  ],
-                  achievements: ["Built an efficient AI model of 98% accurate prediction"]
-                },
-                {
-                  title: "Telecom Engineering Technician",
-                  company: "IPT POWERTECH AND IHS TELECOM TOWER GROUP",
-                  location: "Lagos, Nigeria",
-                  period: "11/2019 – 08/2021",
-                  responsibilities: [
-                    "Managed IT hardware systems and network infrastructure, ensuring telecom clients experienced improved network reliability.",
-                    "Configured and maintained local area networks (LANs) and wide area networks (WANs).",
-                    "Analyzed maintenance data using Python and Excel to optimize resource allocation and predict potential failures."
-                  ],
-                  achievements: ["Designed and implemented network architectures that enhanced overall efficiency by 30%."]
-                },
-                {
-                  title: "Automation Engineer",
-                  company: "TLS INTERNATIONAL SERVICE LIMITED",
-                  location: "Lagos, Nigeria",
-                  period: "04/2017 – 11/2019",
-                  responsibilities: [
-                    "Implemented network troubleshooting processes and IT automation.",
-                    "Interpreted network circuit diagrams for efficient network connectivity and ensured the integrity of network infrastructure.",
-                    "Used ICT tools to collect, process, and analyze automation system data for trend identification."
-                  ],
-                  achievements: ["Reduced system downtime by 30% through improved automation processes."]
-                }
-              ].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
-                  <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
-                  <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
-                  <div className="space-y-4">
-                    <div>
-                      <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
-                      <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
-                        {job.responsibilities.map((responsibility, idx) => (
-                          <li key={idx} className="ml-4">{responsibility}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    {job.achievements.length > 0 && (
-                      <div>
-                        <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
-                        <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
-                          {job.achievements.map((achievement, idx) => (
-                            <li key={idx} className="ml-4">{achievement}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
+     {/* Work Experience Section */}
+<section className="work-experience-section py-24 bg-white dark:bg-gray-900">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
+    <div className="space-y-12 max-w-5xl mx-auto">
+      {[
+        {
+          title: "Data Scientist",
+          company: "AGFA-GEVAERT GROUP",
+          location: "Antwerpen, Belgium",
+          period: "08/2023 – 09/2024",
+          responsibilities: [
+            "Developed and deployed AI/ML models for product quality analysis using sensor data and electrical engineering principles.",
+            "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
+            "Supported network monitoring and incident management to maintain network performance."
+          ],
+          achievements: ["Built an efficient AI model of 98% accurate prediction"]
+        },
+        {
+          title: "Telecom Engineering Technician",
+          company: "IPT POWERTECH AND IHS TELECOM TOWER GROUP",
+          location: "Lagos, Nigeria",
+          period: "11/2019 – 08/2021",
+          responsibilities: [
+            "Managed IT hardware systems and network infrastructure, ensuring telecom clients experienced improved network reliability.",
+            "Configured and maintained local area networks (LANs) and wide area networks (WANs).",
+            "Analyzed maintenance data using Python and Excel to optimize resource allocation and predict potential failures."
+          ],
+          achievements: ["Designed and implemented network architectures that enhanced overall efficiency by 30%."]
+        },
+        {
+          title: "Automation Engineer",
+          company: "TLS INTERNATIONAL SERVICE LIMITED",
+          location: "Lagos, Nigeria",
+          period: "04/2017 – 11/2019",
+          responsibilities: [
+            "Implemented network troubleshooting processes and IT automation.",
+            "Interpreted network circuit diagrams for efficient network connectivity and ensured the integrity of network infrastructure.",
+            "Used ICT tools to collect, process, and analyze automation system data for trend identification."
+          ],
+          achievements: ["Reduced system downtime by 30% through improved automation processes."]
+        }
+      ].map((job, index) => (
+        <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+          <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
+          <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
+          <div className="space-y-4">
+            <div>
+              <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
+              <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
+                {job.responsibilities.map((responsibility, idx) => (
+                  <li key={idx} className="ml-4">{responsibility}</li>
+                ))}
+              </ul>
             </div>
+            {job.achievements.length > 0 && (
+              <div>
+                <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
+                <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
+                  {job.achievements.map((achievement, idx) => (
+                    <li key={idx} className="ml-4">{achievement}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
             
         {/* Projects Section */}
         <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
