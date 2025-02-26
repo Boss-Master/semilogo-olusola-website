@@ -280,10 +280,10 @@ const Index = () => {
                 link: "/RURAL_ELECTRIFICATION_DESIGN_INTERSHIP_P (1).pdf",
               },
               {
-                title: "CMOS Mini-Project: Sawtooth Signal Generation",
+                title: "CMOS Project: Sawtooth Waveform Generation",
                 description:
                   "This project implements a CMOS-based circuit to generate a sawtooth waveform with a period of 40ns and a voltage range from 0.1V to 2.2V. The design allows digital control using a 3-bit input and features voltage-controlled frequency modulation via an OTA.",
-                image: "cmos-sawtooth.png", // Replace with the correct image file if available
+                image: "Sawtooth.png", // Replace with the correct image file if available
                 link: "https://github.com/SemilogoDan/Microelectronics-CMOS-Design",
               },
             ].map((project, index) => (
