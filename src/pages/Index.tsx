@@ -8,15 +8,15 @@ const Index = () => {
       <Header />
       <main className="flex-grow pt-16">
         {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
-          <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg backdrop-blur-sm">
-            <div className="text-center">
-              <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-white mb-6">
+        <section id="home" className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg backdrop-blur-sm">
+              <div className="text-center">
+                <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-white mb-6">
                   Electrical Engineering
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                 Focused on Power Systems: Electricity Generation, Transmission, Distribution, and Renewable Energy Integration
+                  Focused on Power Systems: Electricity Generation, Transmission, Distribution, and Renewable Energy Integration
                 </p>
                 <a
                   href="#projects"
@@ -32,7 +32,7 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                   <img
@@ -40,7 +40,7 @@ const Index = () => {
                     alt="Semilogo Olusola OGUNGBURE"
                     className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
                   />
-                  <div className="flex justify-center mt-6 space-x-4 social-icons">
+                  <div className="flex justify-center mt-6 space-x-4">
                     <a
                       href="https://github.com/SemilogoDan"
                       target="_blank"
@@ -50,7 +50,7 @@ const Index = () => {
                       <Github size={24} />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/?profileId=ACoAADRttzAB7C_f7mYzKmDqTvcsydKnpoxLhHo"
+                      href="https://www.linkedin.com/in/semilogo-dan-s-ba86b2206/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
@@ -68,7 +68,8 @@ const Index = () => {
                 <div>
                   <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">About Me</h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
-                    Recent graduate with a Master's degree in Electrical Engineering, eager to launch my career in a graduate program focused on power systems. My thesis focused on developing an AI/ML model to optimize product quality in power systems by integrating process parameters and inspection data. Along with solid academic training, my field experience as a Power Systems Intern and Field Support Engineer has equipped me with the foundation in electrical power principles, system design, and grid optimization.
+                    I am a recent graduate with a Master's degree in Electrical Engineering, specializing in power systems and renewable energy integration. My thesis focused on developing an AI/ML model to optimize product quality in power systems by integrating process parameters and inspection data. My field experience as a Power Systems Intern and Field Support Engineer has given me a solid foundation in electrical power principles, system design, and grid optimization.
+                  </p>
                   <div className="mb-6">
                     <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Scholarships</h3>
                     <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
@@ -96,9 +97,9 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Interests</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
-                    <li>✓ Power Systems Design  and Analysis</li>
-                    <li>✓Grid Stability & Control</li>
-                    <li>✓ Power Systems Design and protection</li>
+                    <li>✓ Power Systems Design & Analysis</li>
+                    <li>✓ Grid Stability & Control</li>
+                    <li>✓ Power System Protection</li>
                     <li>✓ Renewable Energy Integration</li>
                   </ul>
                 </div>
@@ -113,7 +114,7 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
               Honored to be Featured on Electrical Engineering Portal
             </h2>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
                 <div className="space-y-4">
                   <div className="w-full text-center">
@@ -152,27 +153,31 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-7xl mx-auto">
-              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
                     Master of Science in Electrical Engineering
                   </h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-left">Vrije Brussels Universiteit (VUB)/ULB • 2024</p>
+                <p className="text-gray-600 dark:text-gray-400 text-left">
+                  Vrije Brussels Universiteit (VUB)/ULB • 2024
+                </p>
                 <p className="text-gray-600 dark:text-gray-400 mt-2 text-left">
-                  Network Security, Communication Networks, Machine Learning & Big Data
+                  Thesis: Development of an AI/ML Model to Optimize Product Quality in Power Systems by integrating process parameters and inspection data.
                 </p>
               </div>
               
-              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
                     Bachelor's in Engineering
                   </h3>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-left">Federal University of Technology Akure (FUTA) • 2011-2016</p>
+                <p className="text-gray-600 dark:text-gray-400 text-left">
+                  Federal University of Technology Akure (FUTA) • 2011-2016
+                </p>
                 <p className="text-gray-600 dark:text-gray-400 mt-2 text-left">
                   Control Systems, Digital and Wireless Communication, Power System Analysis
                 </p>
@@ -180,48 +185,48 @@ const Index = () => {
             </div>
           </div>
         </section>
-         
-         {/* Work Experience Section */}
+
+        {/* Work Experience Section */}
         <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
             <div className="space-y-12 max-w-5xl mx-auto">
               {[
                 {
-                  title: "Data Scientist",
-                  company: "AGFA-GEVAERT GROUP",
-                  location: "Antwerpen, Belgium",
-                  period: "08/2023 – 09/2024",
+                  title: "Power Systems Intern – Data Analyst",
+                  company: "Agfa-Gevaert Group",
+                  location: "Belgium",
+                  period: "Dec 2023 – Apr 2024",
                   responsibilities: [
-                    "Developed and deployed AI/ML models for product quality analysis using sensor data and electrical engineering principles.",
-                    "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
-                    "Supported network monitoring and incident management to maintain network performance."
+                    "Developed and deployed AI/ML models to analyze sensor data from power systems, optimizing energy generation and distribution efficiency.",
+                    "Developed predictive maintenance models using machine learning techniques to forecast equipment failures, reducing downtime and enhancing system performance.",
+                    "Communicated analysis results and recommendations to stakeholders through technical reports and visualizations, supporting decision-making for power system improvements."
                   ],
-                  achievements: ["Built an efficient AI model of 98% accurate prediction"]
+                  achievements: []
                 },
                 {
-                  title: "Telecom Engineering Technician",
-                  company: "IPT POWERTECH AND IHS TELECOM TOWER GROUP",
-                  location: "Lagos, Nigeria",
-                  period: "11/2019 – 08/2021",
+                  title: "Field Support Engineer",
+                  company: "IPT Power Tech & IHS Telecom",
+                  location: "Lebanon",
+                  period: "Nov 2019 – Aug 2021",
                   responsibilities: [
-                    "Managed IT hardware systems and network infrastructure, ensuring telecom clients experienced improved network reliability.",
-                    "Configured and maintained local area networks (LANs) and wide area networks (WANs).",
-                    "Analyzed maintenance data using Python and Excel to optimize resource allocation and predict potential failures."
+                    "Performed root cause analysis on electrical faults (transformers, circuit breakers, and generators) and proposed corrective actions.",
+                    "Implemented and ensured the functionality of hybrid power solutions (DCDG) including diesel and renewable energy integration for off-grid sites.",
+                    "Used diagnostic tools and test equipment (multimeters, oscilloscopes) to identify system anomalies and resolve faults efficiently."
                   ],
-                  achievements: ["Designed and implemented network architectures that enhanced overall efficiency by 30%."]
+                  achievements: []
                 },
                 {
-                  title: "Automation Engineer",
-                  company: "TLS INTERNATIONAL SERVICE LIMITED",
-                  location: "Lagos, Nigeria",
-                  period: "04/2017 – 11/2019",
+                  title: "Power Systems Intern",
+                  company: "Ondo State Power Company",
+                  location: "Nigeria",
+                  period: "Jun 2015 – Aug 2016",
                   responsibilities: [
-                    "Implemented network troubleshooting processes and IT automation.",
-                    "Interpreted network circuit diagrams for efficient network connectivity and ensured the integrity of network infrastructure.",
-                    "Used ICT tools to collect, process, and analyze automation system data for trend identification."
+                    "Designed and planned rural electrification power infrastructure, converting 11kV to 415V, which improved electricity distribution for over 1000 households in rural communities.",
+                    "Developed technical documentation including transformer designs and system layouts using AutoCAD, reducing design errors by 10%.",
+                    "Contributed to thesis research on optimizing power distribution networks, focusing on improving grid efficiency and fault tolerance in rural areas, resulting in a 25% performance improvement in 3 rural communities."
                   ],
-                  achievements: ["Reduced system downtime by 30% through improved automation processes."]
+                  achievements: []
                 }
               ].map((job, index) => (
                 <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
@@ -253,12 +258,12 @@ const Index = () => {
             </div>
           </div>
         </section>
-            
+
         {/* Projects Section */}
         <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
                   title: "Design Overview and Analysis of 11/0.415 kV, 500 kVA",
@@ -488,9 +493,3 @@ const Index = () => {
 };
 
 export default Index;
-
-
-
-
-      
-       
