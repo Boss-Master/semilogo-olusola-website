@@ -259,11 +259,12 @@ const Index = () => {
           </div>
         </section>
 
-       {/* Projects Section */}
+     {/* Projects Section */}
       <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Updated to 3 columns on md+ screens */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "Design Overview and Analysis of 11/0.415 kV, 500 kVA",
@@ -283,11 +284,14 @@ const Index = () => {
                 title: "CMOS Project: Sawtooth Waveform Generation",
                 description:
                   "This project implements a CMOS-based circuit to generate a sawtooth waveform with a period of 40ns and a voltage range from 0.1V to 2.2V. The design allows digital control using a 3-bit input and features voltage-controlled frequency modulation via an OTA.",
-                image: "Sawtooth.png", // Replace with the correct image file if available
+                image: "Sawtooth.png", // Replace if needed
                 link: "https://github.com/SemilogoDan/Microelectronics-CMOS-Design",
               },
             ].map((project, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative">
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative"
+              >
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <img
                     src={project.image}
@@ -316,6 +320,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+
 
         {/* Certification Section */}
         <section className="certification-section py-24 bg-white dark:bg-gray-900">
