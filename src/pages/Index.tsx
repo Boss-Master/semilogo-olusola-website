@@ -68,7 +68,7 @@ const Index = () => {
                 <div>
                   <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">About Me</h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
-                    Recent graduate with a Master's degree in Electrical Engineering, eager to launch my career in a graduate program focused on power systems, electricity generation, transmission, and distribution, as well as renewable energy. I am enthusiastic about opportunities where I can learn, grow, and contribute to the company's success. My academic and field experience has given me a solid foundation to make a meaningful impact in the energy sector.
+                    Recent graduate with a Master's degree in Electrical Engineering, eager to launch my career in a graduate program focused on power systems. My thesis focused on developing an AI/ML model to optimize product quality in power systems by integrating process parameters and inspection data. Along with solid academic training, my field experience as a Power Systems Intern and Field Support Engineer has equipped me with the foundation in electrical power principles, system design, and grid optimization. I am eager to launch my career in a role that challenges me to innovate and contribute meaningfully to the energy sector.
                   </p>
                   <div className="mb-6">
                     <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Scholarships</h3>
@@ -97,10 +97,10 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Interests</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
-                    <li>✓ Network Infrastructure & Security</li>
-                    <li>✓ AI/ML Model Development</li>
-                    <li>✓ Power Systems Design</li>
-                    <li>✓ Cloud Technologies</li>
+                    <li>✓ Power Systems Design  and Analysis</li>
+                    <li>✓rid Stability & Control</li>
+                    <li>✓ Power Systems Design and protection</li>
+                    <li>✓ Renewable Energy Integration</li>
                   </ul>
                 </div>
               </div>
@@ -273,12 +273,6 @@ const Index = () => {
                   description: "Comprehensive internship project focusing on rural electrification design and implementation",
                   image: "Rural.png",
                   link: "/RURAL_ELECTRIFICATION_DESIGN_INTERSHIP_P (1).pdf",
-                },
-                {
-                  title: "Personal VPN over TOR",
-                  description: "Secure personal VPN implementation over the TOR network",
-                  image: "VPN.png",
-                  link: "https://medium.com/@SemilogoDan/tor-personal-vpn-exploring-home-based-and-cloud-based-solutions-for-personal-vpn-over-tor-57e6ae0c100d",
                 },
               ].map((project, index) => (
                 <div key={index} className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative">
