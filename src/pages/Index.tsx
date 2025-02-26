@@ -16,7 +16,7 @@ const Index = () => {
                   Electrical Engineering
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                  With interest in Information Communication Technology (ICT)/IT, Power Systems, AI/ML, and Substation Design
+                 Focused on Power Systems: Electricity Generation, Transmission, Distribution, and Renewable Energy Integration
                 </p>
                 <a
                   href="#projects"
@@ -68,8 +68,7 @@ const Index = () => {
                 <div>
                   <h2 className="text-3xl font-bold mb-6 text-left dark:text-white">About Me</h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-6 text-left">
-                    Recent graduate with a Master's degree in Electrical Engineering, eager to launch my career in a graduate program focused on power systems. My thesis focused on developing an AI/ML model to optimize product quality in power systems by integrating process parameters and inspection data. Along with solid academic training, my field experience as a Power Systems Intern and Field Support Engineer has equipped me with the foundation in electrical power principles, system design, and grid optimization. I am eager to launch my career in a role that challenges me to innovate and contribute meaningfully to the energy sector.
-                  </p>
+                    Recent graduate with a Master's degree in Electrical Engineering, eager to launch my career in a graduate program focused on power systems. My thesis focused on developing an AI/ML model to optimize product quality in power systems by integrating process parameters and inspection data. Along with solid academic training, my field experience as a Power Systems Intern and Field Support Engineer has equipped me with the foundation in electrical power principles, system design, and grid optimization.
                   <div className="mb-6">
                     <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Scholarships</h3>
                     <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
@@ -98,7 +97,7 @@ const Index = () => {
                   <h3 className="text-xl font-semibold mb-3 text-left dark:text-white">Interests</h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300 text-left">
                     <li>✓ Power Systems Design  and Analysis</li>
-                    <li>✓rid Stability & Control</li>
+                    <li>✓Grid Stability & Control</li>
                     <li>✓ Power Systems Design and protection</li>
                     <li>✓ Renewable Energy Integration</li>
                   </ul>
