@@ -181,47 +181,47 @@ const Index = () => {
           </div>
         </section>
          
-          {/* Work Experience Section */}
+         {/* Work Experience Section */}
         <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
             <div className="space-y-12 max-w-5xl mx-auto">
               {[
                 {
-                  title: "Power Systems Intern – Data Analyst",
-                  company: "Agfa-Gevaert Group",
-                  location: "Belgium",
-                  period: "Dec 2023 – Apr 2024",
+                  title: "Data Scientist",
+                  company: "AGFA-GEVAERT GROUP",
+                  location: "Antwerpen, Belgium",
+                  period: "08/2023 – 09/2024",
                   responsibilities: [
-                    "Developed and deployed AI/ML models to analyze sensor data from power systems, optimizing energy generation and distribution efficiency.",
-                    "Developed predictive maintenance models using machine learning techniques to forecast equipment failures, reducing downtime and enhancing system performance.",
-                    "Communicated analysis results and recommendations to stakeholders through technical reports and visualizations, supporting decision-making for power system improvements."
+                    "Developed and deployed AI/ML models for product quality analysis using sensor data and electrical engineering principles.",
+                    "Designed and implemented data pipelines using Microsoft Azure tools, improving data flow efficiency by 20%.",
+                    "Supported network monitoring and incident management to maintain network performance."
                   ],
-                  achievements: []  // Add any specific achievements if needed
+                  achievements: ["Built an efficient AI model of 98% accurate prediction"]
                 },
                 {
-                  title: "Field Support Engineer",
-                  company: "IPT Power Tech & IHS Telecom",
-                  location: "Lebanon",
-                  period: "Nov 2019 – Aug 2021",
+                  title: "Telecom Engineering Technician",
+                  company: "IPT POWERTECH AND IHS TELECOM TOWER GROUP",
+                  location: "Lagos, Nigeria",
+                  period: "11/2019 – 08/2021",
                   responsibilities: [
-                    "Performed root cause analysis on electrical faults (transformers, circuit breakers, and generators) and proposed corrective actions.",
-                    "Implemented and ensured the functionality of hybrid power solutions (DCDG) including diesel and renewable energy integration for off-grid sites.",
-                    "Used diagnostic tools and test equipment (multimeters, oscilloscopes) to identify system anomalies and resolve faults efficiently."
+                    "Managed IT hardware systems and network infrastructure, ensuring telecom clients experienced improved network reliability.",
+                    "Configured and maintained local area networks (LANs) and wide area networks (WANs).",
+                    "Analyzed maintenance data using Python and Excel to optimize resource allocation and predict potential failures."
                   ],
-                  achievements: []  // Add any specific achievements if needed
+                  achievements: ["Designed and implemented network architectures that enhanced overall efficiency by 30%."]
                 },
                 {
-                  title: "Power Systems Intern",
-                  company: "Ondo State Power Company",
-                  location: "Nigeria",
-                  period: "Jun 2015 – Aug 2016",
+                  title: "Automation Engineer",
+                  company: "TLS INTERNATIONAL SERVICE LIMITED",
+                  location: "Lagos, Nigeria",
+                  period: "04/2017 – 11/2019",
                   responsibilities: [
-                    "Designed and planned rural electrification power infrastructure, converting 11kV to 415V, which improved electricity distribution for over 1000 households in rural communities.",
-                    "Developed technical documentation including transformer designs and system layouts using AutoCAD, reducing design errors by 10%.",
-                    "Contributed to thesis research on optimizing power distribution networks, focusing on improving grid efficiency and fault tolerance in rural areas, resulting in a 25% performance improvement in 3 rural communities."
+                    "Implemented network troubleshooting processes and IT automation.",
+                    "Interpreted network circuit diagrams for efficient network connectivity and ensured the integrity of network infrastructure.",
+                    "Used ICT tools to collect, process, and analyze automation system data for trend identification."
                   ],
-                  achievements: []  // Add any specific achievements if needed
+                  achievements: ["Reduced system downtime by 30% through improved automation processes."]
                 }
               ].map((job, index) => (
                 <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
@@ -253,7 +253,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-
             
         {/* Projects Section */}
         <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
