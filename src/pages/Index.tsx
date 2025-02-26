@@ -108,17 +108,14 @@ const Index = () => {
           </div>
         </section>
 
-       {/* Featured Project Section */}
+     {/* Featured Project Section */}
         <section className="featured-project py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
               Honored to be Featured on Electrical Engineering Portal
             </h2>
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
-              {/* Change grid-cols-1 md:grid-cols-3 to have three columns on medium screens and above */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 text-left">
-                
-                {/* Column 1 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
                 <div className="space-y-4">
                   <div className="w-full text-center">
                     <h3 className="text-2xl font-semibold dark:text-white">
@@ -126,8 +123,7 @@ const Index = () => {
                     </h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Comprehensive guide on the design and implementation of 11/0.4kV substations 
-                    in Nigeria, focusing on power distribution and safety standards.
+                    Comprehensive guide on the design and implementation of 11/0.4kV substations in Nigeria, focusing on power distribution and safety standards.
                   </p>
                   <div className="text-center">
                     <a 
@@ -140,56 +136,17 @@ const Index = () => {
                     </a>
                   </div>
                 </div>
-        
-                {/* Column 2 (duplicate or new content) */}
-                <div className="space-y-4">
-                  <div className="w-full text-center">
-                    <h3 className="text-2xl font-semibold dark:text-white">
-                      Project Two
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Description of your second project goes here.
-                  </p>
-                  <div className="text-center">
-                    <a 
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                    >
-                      View Full Project
-                    </a>
-                  </div>
+                <div>
+                  <img 
+                    src="EEP.png" 
+                    alt="11/0.4kV Substation"
+                    className="rounded-lg shadow-md w-full h-full object-cover"
+                  />
                 </div>
-        
-                {/* Column 3 (duplicate or new content) */}
-                <div className="space-y-4">
-                  <div className="w-full text-center">
-                    <h3 className="text-2xl font-semibold dark:text-white">
-                      Project Three
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Description of your third project goes here.
-                  </p>
-                  <div className="text-center">
-                    <a 
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-6 py-2 rounded-lg hover:opacity-90 transition-opacity"
-                    >
-                      View Full Project
-                    </a>
-                  </div>
-                </div>
-        
               </div>
             </div>
           </div>
         </section>
-
 
         {/* Education Section */}
         <section className="education-section py-24 bg-white dark:bg-gray-900">
