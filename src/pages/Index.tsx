@@ -10,7 +10,7 @@ const Index = () => {
         {/* Hero Section */}
         <section id="home" className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg backdrop-blur-sm">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg backdrop-blur-sm">
               <div className="text-center">
                 <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-white mb-6">
                   Electrical Engineering
@@ -20,7 +20,7 @@ const Index = () => {
                 </p>
                 <a
                   href="#projects"
-                  className="inline-block bg-primary text-white dark:bg-white dark:text-gray-900 px-8 py-3 rounded-xl hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
+                  className="inline-block bg-primary text-white dark:bg-white dark:text-gray-800 px-8 py-3 rounded-xl hover:bg-primary/90 dark:hover:bg-white/90 transition-colors"
                 >
                   View Projects
                 </a>
@@ -32,7 +32,7 @@ const Index = () => {
         {/* About Section */}
         <section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
                   <img
@@ -114,7 +114,7 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
               Honored to be Featured on Electrical Engineering Portal
             </h2>
-            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden">
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 text-left">
                 <div className="space-y-4">
                   <div className="w-full text-center">
@@ -153,7 +153,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">Education</h2>
             <div className="space-y-8 max-w-7xl mx-auto">
-              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
+              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
@@ -168,7 +168,7 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="relative group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
+              <div className="relative group bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4 mb-4">
                   <GraduationCap className="text-primary dark:text-white" size={24} />
                   <h3 className="text-xl font-semibold dark:text-white">
@@ -229,7 +229,7 @@ const Index = () => {
                   achievements: []
                 }
               ].map((job, index) => (
-                <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
                   <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
                   <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
