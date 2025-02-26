@@ -262,7 +262,7 @@ const Index = () => {
        {/* Projects Section */}
       <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
@@ -382,7 +382,7 @@ const Index = () => {
         {/* Honors & Awards Section */}
         <section className="honors-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Honors & Awards</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Achievements</h2>
             <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
                 <a 
