@@ -181,78 +181,78 @@ const Index = () => {
           </div>
         </section>
          
-  {/* Work Experience Section */}
-<section className="work-experience-section py-24 bg-white dark:bg-gray-900">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
-    <div className="space-y-12 max-w-5xl mx-auto">
-      {[
-        {
-          title: "Power Systems Intern – Data Analyst",
-          company: "Agfa-Gevaert Group",
-          location: "Belgium",
-          period: "Dec 2023 – Apr 2024",
-          responsibilities: [
-            "Developed and deployed AI/ML models to analyze sensor data from power systems, optimizing energy generation and distribution efficiency.",
-            "Developed predictive maintenance models using machine learning techniques to forecast equipment failures, reducing downtime and enhancing system performance.",
-            "Communicated analysis results and recommendations to stakeholders through technical reports and visualizations, supporting decision-making for power system improvements."
-          ],
-          achievements: []  // Add any specific achievements if needed
-        },
-        {
-          title: "Field Support Engineer",
-          company: "IPT Power Tech & IHS Telecom",
-          location: "Lebanon",
-          period: "Nov 2019 – Aug 2021",
-          responsibilities: [
-            "Performed root cause analysis on electrical faults (transformers, circuit breakers, and generators) and proposed corrective actions.",
-            "Implemented and ensured the functionality of hybrid power solutions (DCDG) including diesel and renewable energy integration for off-grid sites.",
-            "Used diagnostic tools and test equipment (multimeters, oscilloscopes) to identify system anomalies and resolve faults efficiently."
-          ],
-          achievements: []  // Add any specific achievements if needed
-        },
-        {
-          title: "Power Systems Intern",
-          company: "Ondo State Power Company",
-          location: "Nigeria",
-          period: "Jun 2015 – Aug 2016",
-          responsibilities: [
-            "Designed and planned rural electrification power infrastructure, converting 11kV to 415V, which improved electricity distribution for over 1000 households in rural communities.",
-            "Developed technical documentation including transformer designs and system layouts using AutoCAD, reducing design errors by 10%.",
-            "Contributed to thesis research on optimizing power distribution networks, focusing on improving grid efficiency and fault tolerance in rural areas, resulting in a 25% performance improvement in 3 rural communities."
-          ],
-          achievements: []  // Add any specific achievements if needed
-        }
-      ].map((job, index) => (
-        <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
-          <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
-          <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
-              <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
-                {job.responsibilities.map((responsibility, idx) => (
-                  <li key={idx} className="ml-4">{responsibility}</li>
-                ))}
-              </ul>
+          {/* Work Experience Section */}
+        <section className="work-experience-section py-24 bg-white dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Work Experience</h2>
+            <div className="space-y-12 max-w-5xl mx-auto">
+              {[
+                {
+                  title: "Power Systems Intern – Data Analyst",
+                  company: "Agfa-Gevaert Group",
+                  location: "Belgium",
+                  period: "Dec 2023 – Apr 2024",
+                  responsibilities: [
+                    "Developed and deployed AI/ML models to analyze sensor data from power systems, optimizing energy generation and distribution efficiency.",
+                    "Developed predictive maintenance models using machine learning techniques to forecast equipment failures, reducing downtime and enhancing system performance.",
+                    "Communicated analysis results and recommendations to stakeholders through technical reports and visualizations, supporting decision-making for power system improvements."
+                  ],
+                  achievements: []  // Add any specific achievements if needed
+                },
+                {
+                  title: "Field Support Engineer",
+                  company: "IPT Power Tech & IHS Telecom",
+                  location: "Lebanon",
+                  period: "Nov 2019 – Aug 2021",
+                  responsibilities: [
+                    "Performed root cause analysis on electrical faults (transformers, circuit breakers, and generators) and proposed corrective actions.",
+                    "Implemented and ensured the functionality of hybrid power solutions (DCDG) including diesel and renewable energy integration for off-grid sites.",
+                    "Used diagnostic tools and test equipment (multimeters, oscilloscopes) to identify system anomalies and resolve faults efficiently."
+                  ],
+                  achievements: []  // Add any specific achievements if needed
+                },
+                {
+                  title: "Power Systems Intern",
+                  company: "Ondo State Power Company",
+                  location: "Nigeria",
+                  period: "Jun 2015 – Aug 2016",
+                  responsibilities: [
+                    "Designed and planned rural electrification power infrastructure, converting 11kV to 415V, which improved electricity distribution for over 1000 households in rural communities.",
+                    "Developed technical documentation including transformer designs and system layouts using AutoCAD, reducing design errors by 10%.",
+                    "Contributed to thesis research on optimizing power distribution networks, focusing on improving grid efficiency and fault tolerance in rural areas, resulting in a 25% performance improvement in 3 rural communities."
+                  ],
+                  achievements: []  // Add any specific achievements if needed
+                }
+              ].map((job, index) => (
+                <div key={index} className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-lg">
+                  <h3 className="text-2xl font-semibold dark:text-white mb-2">{job.title}</h3>
+                  <p className="text-primary font-medium mb-1">{job.company}, {job.location}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-6">{job.period}</p>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="text-lg font-semibold mb-2 dark:text-white">Key Responsibilities</h4>
+                      <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
+                        {job.responsibilities.map((responsibility, idx) => (
+                          <li key={idx} className="ml-4">{responsibility}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    {job.achievements.length > 0 && (
+                      <div>
+                        <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
+                        <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
+                          {job.achievements.map((achievement, idx) => (
+                            <li key={idx} className="ml-4">{achievement}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
-            {job.achievements.length > 0 && (
-              <div>
-                <h4 className="text-lg font-semibold mb-2 dark:text-white">Achievements</h4>
-                <ul className="list-disc pl-5 space-y-2 text-left text-gray-600 dark:text-gray-300">
-                  {job.achievements.map((achievement, idx) => (
-                    <li key={idx} className="ml-4">{achievement}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+        </section>
 
             
         {/* Projects Section */}
