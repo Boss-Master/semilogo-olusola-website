@@ -338,13 +338,13 @@ const Index = () => {
                   title: "Wind Energy",
                   issuer: "Coursera",
                   date: "Nov 2024",
-                  link: "https://bit.ly/41k0GpN"
+                  link: "https://www.coursera.org/accomplishments"
                 },
                 {
                   title: "Energy Transition: Innovation Towards a Low-Carbon Future",
                   issuer: "Coursera",
                   date: "Dec 2024",
-                  link: "https://i.imgur.com/lzwUwtH.png"
+                  link: "https://www.coursera.org/accomplishments"
                 },
                 {
                   title: "Microsoft Power BI Data Analyst Specialization",
