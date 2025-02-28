@@ -1,5 +1,11 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import React, { useState } from 'react';
+import { useToast } from "@/hooks/use-toast";
+import emailjs from 'emailjs-com';
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+
 import { Github, Linkedin, Mail, GraduationCap, Award, Medal } from "lucide-react";
 
 const Index = () => {
@@ -447,67 +453,67 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
-        <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
-            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
-              <div className="max-w-7xl mx-auto">
-                <p className="text-gray-600 dark:text-gray-300 mb-8">
-                  I'm always open to discussing new projects and opportunities.
-                </p>
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-left dark:text-white">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
-                      placeholder="Your name"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-left dark:text-white">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
-                      placeholder="your.email@example.com"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-left dark:text-white">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
-                      placeholder="Your message"
-                      required
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
+    
+      {/* Contact Section */}
+      <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
+          <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+            <div className="max-w-7xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 mb-8">
+                I'm always open to discussing new projects and opportunities.
+              </p>
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={4}
+                    className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                    placeholder="Your message"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                >
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
       </main>
       <Footer />
     </div>
