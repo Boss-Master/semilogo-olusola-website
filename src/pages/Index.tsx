@@ -35,11 +35,14 @@ const Index = () => {
             <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
-                  <img
-                    src="/Profile_pic.jpg"
-                    alt="Semilogo Olusola OGUNGBURE"
-                    className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg"
-                  />
+                  <div className="profile-container relative w-64 h-64 mx-auto">
+                    <div className="profile-glow absolute inset-0 rounded-full"></div>
+                    <img
+                      src="/Profile_pic.jpg"
+                      alt="Semilogo Olusola OGUNGBURE"
+                      className="w-64 h-64 rounded-full mx-auto object-cover shadow-lg relative z-10"
+                    />
+                  </div>
                   <div className="flex justify-center mt-6 space-x-4">
                     <a
                       href="https://github.com/SemilogoDan"
@@ -108,6 +111,56 @@ const Index = () => {
           </div>
         </section>
 
+
+        
+      /* Profile image glow effect */
+          .profile-container {
+            position: relative;
+            z-index: 1;
+          }
+          
+          .profile-glow {
+            content: '';
+            z-index: 0;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            top: -10px;
+            left: -10px;
+            border-radius: 50%;
+            background: conic-gradient(
+              #9b87f5,
+              #D6BCFA,
+              #E5DEFF,
+              #8B5CF6,
+              #9b87f5
+            );
+            animation: rotate-glow 8s linear infinite;
+          }
+          
+          .profile-glow::before {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            background: white;
+            border-radius: 50%;
+            z-index: 1;
+          }
+          
+          .dark .profile-glow::before {
+            background: #1f2937; /* dark mode background */
+          }
+          
+          @keyframes rotate-glow {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+
+        
      {/* Featured Project Section */}
         <section className="featured-project py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
