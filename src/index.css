@@ -135,23 +135,24 @@
   z-index: 1;
 }
 
-.profile-glow {
-  content: '';
-  z-index: 0;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  top: -10px;
-  left: -10px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #9b87f5,
-    #D6BCFA,
-    #E5DEFF,
-    #8B5CF6,
-    #9b87f5
-  );
-  animation: rotate-glow 8s linear infinite;
-}
+ .profile-glow {
+   content: '';
+   z-index: 0;
+   width: calc(100% + 20px);
+   height: calc(100% + 20px);
+   top: -10px;
+   left: -10px;
+   border-radius: 50%;
+   background: conic-gradient(
+     #0EA5E9, /* Ocean Blue */
+     #1EAEDB, /* Bright Blue */
+     #33C3F0, /* Sky Blue */
+     #0063B2, /* Deep Blue */
+     #004E8F, /* Navy Blue */
+     #0EA5E9  /* Ocean Blue again */
+   );
+   animation: rotate-glow 10s linear infinite;
+ }
 
 .profile-glow::before {
   content: '';
