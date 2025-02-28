@@ -96,7 +96,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t dark:border-gray-700 text-center text-sm text-gray-600 dark:text-gray-400">
-          © {new Date().getFullYear()} Semilogo. All rights reserved.
+          © {new Date().getFullYear()} Semilogo Olusola OGUNGBURE. All rights reserved.
         </div>
       </div>
     </footer>
