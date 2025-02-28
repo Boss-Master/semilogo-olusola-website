@@ -344,7 +344,7 @@ const Index = () => {
                   title: "Wind Energy",
                   issuer: "Coursera",
                   date: "Nov 2024",
-                  link: "https://www.coursera.org/accomplishments"
+                  link: "/Certification Completion.png"
                 },
                 {
                   title: "Energy Transition: Innovation Towards a Low-Carbon Future",
