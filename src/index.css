@@ -129,46 +129,60 @@
   @apply transition-all duration-300;
 }
 
-/* Profile image container */
+/* Profile image glow effect */
 .profile-container {
   position: relative;
-  width: 150px; /* Adjust as needed */
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 }
 
-/* Neon glow ring */
 .profile-glow {
-  position: absolute;
-  width: 160px;
-  height: 160px;
+  content: '';
+  z-index: 0;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  top: -10px;
+  left: -10px;
   border-radius: 50%;
   background: conic-gradient(
-    transparent 0deg, 
-    #ffffff 60deg, /* White */
-    #0EA5E9 180deg, /* Ocean Blue */
-    #1EAEDB 300deg, /* Bright Blue */
-    transparent 360deg
+    #ffffff, /* White */
+    #e0f7fa, /* Light Blue (tint) */
+    #81d4fa, /* Sky Blue */
+    #03a9f4, /* Bright Blue */
+    #0288d1, /* Deep Blue */
+    #ffffff  /* White again */
   );
-  box-shadow: 0 0 20px #ffffff, 0 0 30px #0EA5E9; /* White & Blue Glow */
-  animation: rotate-glow 3s linear infinite;
+  animation: rotate-glow 8s linear infinite, pulse-glow 3s ease-in-out infinite;
+}
+
+.profile-glow::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.dark .profile-glow::before {
+  background: #1f2937; /* Dark mode background */
 }
 
 /* Rotation animation */
 @keyframes rotate-glow {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-/* Profile image */
-.profile-image {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: url('your-image.jpg') center/cover;
-  z-index: 1;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+/* Pulse animation for glowing effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
