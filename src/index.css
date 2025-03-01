@@ -133,40 +133,50 @@
 .profile-container {
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
- .profile-glow {
-   content: '';
-   z-index: 0;
-   width: calc(100% + 20px);
-   height: calc(100% + 20px);
-   top: -10px;
-   left: -10px;
-   border-radius: 50%;
-   background: conic-gradient(
-     #0EA5E9, /* Ocean Blue */
-     #1EAEDB, /* Bright Blue */
-     #33C3F0, /* Sky Blue */
-     #0063B2, /* Deep Blue */
-     #004E8F, /* Navy Blue */
-     #0EA5E9  /* Ocean Blue again */
-   );
-   animation: rotate-glow 10s linear infinite;
- }
+/* Glow effect */
+.profile-glow {
+  position: absolute;
+  z-index: 0;
+  width: calc(100% + 25px);
+  height: calc(100% + 25px);
+  top: -12px;
+  left: -12px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #0EA5E9, /* Ocean Blue */
+    #1EAEDB, /* Bright Blue */
+    #33C3F0, /* Sky Blue */
+    #FF3CAC, /* Pink */
+    #784BA0, /* Purple */
+    #2B86C5, /* Cyan */
+    #0EA5E9  /* Ocean Blue again */
+  );
+  filter: blur(8px); /* Soft glow */
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.7);
+  animation: rotate-glow 6s linear infinite, pulse-glow 3s ease-in-out infinite;
+}
 
+/* Inner white circle to prevent overlap */
 .profile-glow::before {
   content: '';
   position: absolute;
-  inset: 12px;
+  inset: 14px;
   background: white;
   border-radius: 50%;
   z-index: 1;
 }
 
+/* Dark mode adaptation */
 .dark .profile-glow::before {
-  background: #1f2937; /* dark mode background */
+  background: #1f2937; /* Dark mode background */
 }
 
+/* Rotating animation */
 @keyframes rotate-glow {
   0% {
     transform: rotate(0deg);
@@ -176,3 +186,18 @@
   }
 }
 
+/* Subtle pulse effect */
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
