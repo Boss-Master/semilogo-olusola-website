@@ -148,17 +148,15 @@
   left: -12px;
   border-radius: 50%;
   background: conic-gradient(
-    #0EA5E9, /* Ocean Blue */
-    #1EAEDB, /* Bright Blue */
-    #33C3F0, /* Sky Blue */
-    #FF3CAC, /* Pink */
-    #784BA0, /* Purple */
-    #2B86C5, /* Cyan */
-    #0EA5E9  /* Ocean Blue again */
+    #B0BEC5,  /* Light Gray */
+    #90A4AE,  /* Soft Gray */
+    #E0F7FA,  /* Light Blue */
+    #81D4FA,  /* Sky Blue */
+    #B0BEC5  /* Light Gray again */
   );
-  filter: blur(8px); /* Soft glow */
-  box-shadow: 0 0 15px rgba(14, 165, 233, 0.7);
-  animation: rotate-glow 6s linear infinite, pulse-glow 3s ease-in-out infinite;
+  filter: blur(8px); /* Soft glow effect */
+  box-shadow: 0 0 20px rgba(176, 190, 197, 0.8); /* Enhanced glow */
+  animation: rotate-glow 5s linear infinite;
 }
 
 /* Inner white circle to prevent overlap */
@@ -183,21 +181,5 @@
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/* Subtle pulse effect */
-@keyframes pulse-glow {
-  0% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.8;
   }
 }
