@@ -129,57 +129,45 @@
   @apply transition-all duration-300;
 }
 
-/* Profile image glow effect */
+/* Profile image container */
 .profile-container {
   position: relative;
-  z-index: 1;
+  width: 150px; /* Adjust as needed */
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Glow effect */
+/* Neon ring effect */
 .profile-glow {
   position: absolute;
-  z-index: 0;
-  width: calc(100% + 25px);
-  height: calc(100% + 25px);
-  top: -12px;
-  left: -12px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   background: conic-gradient(
-    #B0BEC5,  /* Light Gray */
-    #90A4AE,  /* Soft Gray */
-    #E0F7FA,  /* Light Blue */
-    #81D4FA,  /* Sky Blue */
-    #B0BEC5  /* Light Gray again */
+    transparent 0deg, 
+    #81D4FA 100deg, /* Light Blue */
+    transparent 180deg,
+    #E040FB 260deg, /* Neon Purple */
+    transparent 360deg
   );
-  filter: blur(8px); /* Soft glow effect */
-  box-shadow: 0 0 20px rgba(176, 190, 197, 0.8); /* Enhanced glow */
-  animation: rotate-glow 5s linear infinite;
-}
-
-/* Inner white circle to prevent overlap */
-.profile-glow::before {
-  content: '';
-  position: absolute;
-  inset: 14px;
-  background: white;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Dark mode adaptation */
-.dark .profile-glow::before {
-  background: #1f2937; /* Dark mode background */
+  box-shadow: 0 0 20px #81D4FA, 0 0 30px #E040FB; /* Neon glow effect */
+  animation: rotate-glow 3s linear infinite;
 }
 
 /* Rotating animation */
 @keyframes rotate-glow {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Profile image */
+.profile-image {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url('your-image.jpg') center/cover;
+  z-index: 1;
 }
