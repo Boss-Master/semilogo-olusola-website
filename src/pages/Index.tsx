@@ -344,13 +344,13 @@ const Index = () => {
                   title: "Solar Energy and Electrical System Design",
                   issuer: "Coursera",
                   date: "Dec 2024",
-                  link: "https://www.coursera.org/accomplishments"
+                  link: "https://www.coursera.org/account/accomplishments/verify/Y9LKOWJ8ZYXJ"
                 },
                 {
                   title: "Wind Energy",
                   issuer: "Coursera",
                   date: "Nov 2024",
-                  link: "/Certification Completion.png"
+                  link: "https://www.coursera.org/account/accomplishments/certificate/7QHV3MVEGXD6"
                 },
                 {
                   title: "Energy Transition: Innovation Towards a Low-Carbon Future",
