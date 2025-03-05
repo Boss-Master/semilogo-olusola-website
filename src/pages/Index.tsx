@@ -1,12 +1,11 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import React, { useState } from 'react';
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from '@emailjs/browser'; // Updated import
+import emailjs from 'emailjs-com';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
-import { Github, Linkedin, Mail, GraduationCap, Award, Medal } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Index = () => {
   const { toast } = useToast();
@@ -36,21 +35,20 @@ const Index = () => {
         to_name: 'Semilogo OGUNGBURE'
       };
 
-      // Send email using EmailJS
+      console.log('Sending email with params:', templateParams);
+
       await emailjs.send(
-        'service_h6yyt45', // Replace with your EmailJS service ID
-        'template_xlaanla', // Replace with your EmailJS template ID
-        templateParams, // Template parameters
-        'x6vgvGnMcJAOBqnZL' // Replace with your EmailJS public key
+        'service_h6yyt45',
+        'template_xlaanla',
+        templateParams,
+        'x6vgvGnMcJAOBqnZL'
       );
 
-      // Show success toast
       toast({
         title: "Message sent!",
         description: "Your message has been sent successfully.",
       });
 
-      // Reset form data
       setFormData({
         name: '',
         email: '',
@@ -59,7 +57,6 @@ const Index = () => {
       });
     } catch (error) {
       console.error('Error sending email:', error);
-      // Show error toast
       toast({
         title: "Error",
         description: "There was an error sending your message. Please try again.",
@@ -74,7 +71,6 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow pt-16">
-        {/* Hero Section */}
         <section id="home" className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
             <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg backdrop-blur-sm">
@@ -96,7 +92,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* About Section */}
         <section id="about" className="about-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
@@ -178,68 +173,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
-        <section id="projects" className="project-section py-24 bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Design Overview and Analysis of 11/0.415 kV, 500 kVA",
-                  description:
-                    "This project involves the design, analysis, and performance evaluation of a 500 kVA, 11/0.415 kV distribution transformer, focusing on efficiency, losses, and voltage regulation.",
-                  image: "distribution-transformer.png",
-                  link: "/DESIGN_OF_500kVA_11_0_415kV_SUBSTATION_O (1).pdf",
-                },
-                {
-                  title: "Rural Electrification Design Project",
-                  description:
-                    "Comprehensive internship project focusing on rural electrification design and implementation.",
-                  image: "Rural.png",
-                  link: "/RURAL_ELECTRIFICATION_DESIGN_INTERSHIP_P (1).pdf",
-                },
-                {
-                  title: "CMOS Project: Sawtooth Waveform Generation",
-                  description:
-                    "This project implements a CMOS-based circuit to generate a sawtooth waveform with a period of 40ns and a voltage range from 0.1V to 2.2V. The design allows digital control using a 3-bit input and features voltage-controlled frequency modulation via an OTA.",
-                  image: "Sawtooth.png",
-                  link: "https://github.com/SemilogoDan/Microelectronics-CMOS-Design",
-                },
-              ].map((project, index) => (
-                <div
-                  key={index}
-                  className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg group relative"
-                >
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-48 object-cover transition-opacity duration-300"
-                    />
-                    <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
-                      <p className="text-white text-center">{project.description}</p>
-                    </div>
-                  </a>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 project-title dark:text-white">
-                      {project.title}
-                    </h3>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary dark:text-white hover:text-primary/90 dark:hover:text-gray-300"
-                    >
-                      View Project →
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
         <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
