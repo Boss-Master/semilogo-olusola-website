@@ -9,6 +9,64 @@ import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, GraduationCap, Award, Medal } from "lucide-react";
 
 const Index = () => {
+    const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+    subject: 'New Contact Form Message'
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const templateParams = {
+        subject: formData.subject,
+        name: formData.name,
+        message: formData.message,
+        from_email: formData.email,
+        to_name: 'Semilogo OGUNGBURE'
+      };
+
+      console.log('Sending email with params:', templateParams);
+
+      await emailjs.send(
+        'service_h6yyt45',
+        'template_xlaanla',
+        templateParams,
+        'x6vgvGnMcJAOBqnZL'
+      );
+
+      toast({
+        title: "Message sent!",
+        description: "Your message has been sent successfully.",
+      });
+
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+        subject: 'New Contact Form Message'
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -456,64 +514,71 @@ const Index = () => {
     
       {/* Contact Section */}
       <section id="contact" className="contact-section py-24 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
-          <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
-            <div className="max-w-7xl mx-auto">
-              <p className="text-gray-600 dark:text-gray-300 mb-8">
-                I'm always open to discussing new projects and opportunities.
-              </p>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-left dark:text-white">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
-                    placeholder="Your name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-left dark:text-white">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-left dark:text-white">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
-                    placeholder="Your message"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">Get In Touch</h2>
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+              <div className="max-w-7xl mx-auto">
+                <p className="text-gray-600 dark:text-gray-300 mb-8">
+                  I'm always open to discussing new projects and opportunities.
+                </p>
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                      Name
+                    </label>
+                    <Input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                      placeholder="Your name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                      Email
+                    </label>
+                    <Input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                      placeholder="your.email@example.com"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-left dark:text-white">
+                      Message
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      className="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-600 focus:ring-2 focus:ring-primary"
+                      placeholder="Your message"
+                      required
+                      value={formData.message}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </main>
       <Footer />
     </div>
